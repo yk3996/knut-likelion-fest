@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+{% extends 'navbar.html' %}
+{% block content %}
+    <div class="container" data-target="#navbar-example2" data-offset="0">
+        <!-- preview -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin: 30px 0px 0px 0px;">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" style="position:relative; height:3em; padding-bottom:60%; background: #000">
+                <div class="carousel-item active" style="position:absolute; width:100%; height:100%; left:0; top:0">
+                <img src="/static/img/111.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" style="position:absolute; width:100%; height:100%; left:0; top:0">
+                <img src="/static/img/222.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" style="position:absolute; width:100%; height:100%; left:0; top:0">
+                <img src="/static/img/333.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- intro -->
+        <section style="background: url(/static/img/444.png) center top repeat fixed; background-size: cover; position: relative; text-align: center; margin: 0px 0px 0px 0px; padding: 15px 0 20px 0;">
+            <div class="container">
+                <header class="section-header">
+                    <h3>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/M7B1xVMztKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <img src="/static/img/line-up.png" style="height: auto; width: 100%;">
+                        </div>
+                    </h3>
+                </header>
+            </div>
+        </section>
+        <!-- content -->
+        <section style="background: #fff; background-size: cover; padding: 15px 0 15px 0;">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin: 0 0 30px 0;">
+                    <h3>축제 소개</h3>
+                </div>
+                <div role="separator" class="dropdown-divider" style="border-color: #000; margin: 0 30% 50px 30%"></div>
+                <div class="row" style="padding: 0 2% 0 4%;">
+                    <div class="col-lg-4 col-md-6 wow bounceInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/static/img/example.bmp" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow bounceInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/static/img/555.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow bounceInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/static/img/555.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow bounceInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/static/img/555.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow bounceInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/static/img/555.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow bounceInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/static/img/555.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow bounceInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/static/img/555.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow bounceInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/static/img/555.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow bounceInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/static/img/555.png" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 카드 추가
+                    <div class="col-lg-4 col-md-6 wow bounceInUp">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/static/img/example.bmp" class="card-img-top" alt="..." style="height: 170px;">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                     -->
+                </div>
+            </div>
+        </section>
+        <!-- announcement -->
+        <section style="background: rgb(122, 58, 61); background-size: cover; padding: 10px 0 15px 0;">
+            <div class="container">
+                <div class="row">
+                        <div class="jumbotron" style="margin: 3% 3% 3% 3%">
+                            <div class="container">
+                                <h1 class="display-4"><h2><span>국내 유일 교통특성화 대학</span> 한국교통대학교</h2></h1>
+                                <div role="separator" class="dropdown-divider" style="border-color: #000; margin: 0 30% 50px 30%; margin: 0 20% 0 0;"></div>
+                                <p class="lead">
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                            <td>
+                                                <p>한국교통대학교는 우수한 교수진과 교육&middot;연구 인프라를 바탕으로 창의와 열정을 가진 글로벌 인재를 양성하고 있습니다. 특히, 국내 유일의 교통 특성화 대학으로서 녹색기반 신성장 동력분야(충주), 보건&middot;의료&middot;생명분야(증평), 철도&middot;교통분야(의왕)로 각각 특성화된 3개의 캠퍼스를 갖추고 있습니다. </p> 
+                                                <p>그 동안 우리 대학이 배출한 8만여 졸업생들은 사회 각 분야를 이끌어가는 리더로서 제 역할을 다하고 있습니다. 국내를 넘어 세계의 명문대학들과 경쟁을 위한 노력을 경주해 왔고 현장 중심의 실용교육을 통해 국제 감각을 갖춘 미래 인재 양성에 혼신의 힘을 기울인 결과라고 생각합니다.</p> 
+                                                <p>100여년의 역사를 자랑하는 우리 대학은 무한한 발전가능성과 잠재력을 겸비하고 있습니다. 대학 구성원과 지역사회의 행복을 창출할 수 있는 강한 대학으로 만들어 나가겠습니다. 소통과 화합을 통하여 신뢰와 원칙이 지켜질 수 있도록 하겠습니다. 개방화와 디지털화가 가속화되는 이 시대에, 삶의 가치와 의미를 제대로 이해하고 실천하는 글로벌 리더 양성에 열과 성을 다하겠습니다.</p> 
+                                                <p>관심과 사랑을 모아 주십시오.<br> 감사합니다.</p> 
+                                                <p style="text-align: left;">　　　　　　　　총장 　 박  준  훈</p>
+                                            </td>
+                                            <td>
+                                                <img alt="국립한국교통대학교 총장 박준훈 이미지" src="/static/img/greeting_img_001_new.png"></div>
+                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="footer" style="background: #111; padding: 0 0 30px 0; color: #eee; font-size: 14px">
+        <div class="footer-top" style="background: #000;padding: 60px 0 30px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-info" style="margin-bottom: 30px;">
+                        <h3 style="font-size: 34px; margin: 0 0 20px 0; padding: 2px 0 2px 10px; line-height: 1; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif; font-weight: 700; letter-spacing: 3px; border-left: 4px solid rgb(122, 58, 61)">한국교통대</h3>
+                        <p style="font-size: 14px; line-height: 24px; margin-bottom: 0;">
+                            <strong>
+                                국내 최초의 교통 특성화 국립대학<br>
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <ul style="list-style: square;">
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>관련 링크</h4>
+                        <ul style="list-style: square;">
+                            <li><a href="http://www.ut.ac.kr/kor.do" style="display: inline-block; color: #eee; border-radius: 50%; margin-right: 4px; text-align: center;">교통대 홈페이지</a></li>
+                            <li><a href="http://www.ut.ac.kr/kor/sub01_06_01.do" style="display: inline-block; color: #eee; border-radius: 50%; margin-right: 4px; text-align: center;">찾아오시는 길</a></li>
+                            <li><a href="http://www.weather.go.kr/weather/main.jsp" style="display: inline-block; color: #eee; border-radius: 50%; margin-right: 4px; text-align: center;">기상청</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>담당자 정보</h4>
+                        <p>
+                            충청북도 충주시 대학로 50<br>
+                            27469<br>
+                            <strong>TEL:</strong> 043-841-5114<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                한국교통대학교 멋쟁이사자처럼 7기
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+{% endblock %}
